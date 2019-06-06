@@ -1,15 +1,117 @@
 
 <!DOCTYPE html>
 <html>
+    
     <head>
-   
+        <!-- NAv BAR ****************************************************-->
+    <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html" class = active>Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html" class = about>About</a></li>
+        </ul>
+    <!-- ************************************************************-->
     </head>
     <body>  
         <table>
-            <tr><th></th><th></th></tr>
-            <tr><td>Project 1</td><td></td></tr>
-            <tr><td>Project 2</td><td></td></tr>
-            <tr><td>Project 3</td><td></td></tr>
-        </table>
+            <tr><th> Projects </th><th> </th></tr>
+            <tr><td class = "title"> Project 1 </td><td class = "desc"> Description </td></tr>
+            <tr><td class = "title"> Project 2 </td><td class = "desc"> Description </td></tr>
+            <tr><td class = "title"> Project 3 </td><td class = "desc"> Description </td></tr>
+            <tr><td class = "title"> Project 4 </td><td class = "desc"> Description </td></tr>
+        </table> 
     </body>
+    <style>
+        body
+        {
+            padding-top: 5%;
+        }
+        table
+        {
+            background-color: lightgray;
+            border: 2px solid black;
+            width: 85%;
+            
+        }
+
+        .title
+        {
+            text-align: center;
+            font-size: 25px;
+            width: 25%;
+        }
+
+        .desc
+        {
+            font-size: 18px;
+            text-align: left;
+        }
+
+        tr:nth-child(even)
+        {
+            background-color: blue;
+            color: white;
+            
+        }
+
+        th
+        {
+            background-color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        /* NAV BAR ************************/
+    ul 
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        overflow: hidden;
+        border: 1px solid #555;
+        position: fixed;
+        width: 95%;
+        background-color: #333;
+    }
+
+    li a 
+    {
+        display: block;
+        color: white;
+        padding: 16px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover 
+    {
+        background-color: #555;
+        color: white;
+        box-shadow: 0 8px 16px 0 lightblue , 0 6px 20px 0 blue;
+    }
+    li 
+    {
+        float: left;
+    }
+    .active 
+    {
+        background-color: blue;
+        
+    }
+    .active:hover
+    {
+        background-color: darkblue;
+    }
+    li:last-child 
+    {
+        border-bottom: none;
+    }
+    li a:hover:not(.active) 
+    {
+        background-color: #111;
+    }
+/*********************************/
+        
+    </style>
 </html>

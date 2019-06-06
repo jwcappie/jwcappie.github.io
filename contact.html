@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <head>
+                <!-- NAv BAR ****************************************************-->
+        <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html"class = active>Contact</a></li>
+                <li><a href="about.html" class = about>About</a></li>
+        </ul>
+            <!-- ************************************************************-->
+    </head>
+<body>
     <table>
         <tr> <th> Contact Information </th> <th></th></tr>
         <tr> <td> Name: </td> <td> Justin Cappiello </td> </tr>
@@ -8,7 +20,14 @@
         <tr> <td> Mobile: </td> <td> 585-721-2573 </td> </tr>
         
     </table>
+
+</body>
     <style>
+        body
+        {
+            padding-top: 5%;
+        }
+        
         tr 
         {
             padding: 0%
@@ -17,10 +36,12 @@
         {
             background-color: blue;
             color: white;
+            font-size: 20px;
         }
         td 
         {
             background-color: lightgray;
+            font-size: 15px;
         }
         table
         {   
@@ -29,5 +50,55 @@
             height: 25%;
             width: 33%;
         }
+        /* NAV BAR ************************/
+ul 
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        overflow: hidden;
+        border: 1px solid #555;
+        position: fixed;
+        width: 95%;
+        background-color: #333;
+    }
+
+    li a 
+    {
+        display: block;
+        color: white;
+        padding: 16px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover 
+    {
+        background-color: #555;
+        color: white;
+        box-shadow: 0 8px 16px 0 lightblue , 0 6px 20px 0 blue;
+    }
+    li 
+    {
+        float: left;
+    }
+    .active 
+    {
+        background-color: blue;
+        
+    }
+    .active:hover
+    {
+        background-color: darkblue;
+    }
+    li:last-child 
+    {
+        border-bottom: none;
+    }
+    li a:hover:not(.active) 
+    {
+        background-color: #111;
+    }
+/*********************************/
     </style>
 </html>
